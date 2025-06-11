@@ -29,6 +29,7 @@ const count = ref(0)
 ## 添加vitepress-theme-demoblock
 
 :::demo
+
 ```vue
 <template>
   <button class="my-button" @click="count++">点击了 {{ count }} 次</button>
@@ -53,4 +54,5 @@ const count = ref(0)
 }
 </style>
 ```
+
 :::

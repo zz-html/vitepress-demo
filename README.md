@@ -70,10 +70,25 @@ export default defineConfig({
 ```mts
 import DefaultTheme from 'vitepress/theme'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
+import { useComponents } from './useComponents'
 
 export default {
   ...DefaultTheme,
+  enhanceApp(ctx) {
+    DefaultTheme.enhanceApp(ctx)
+    useComponents(ctx.app)
+  }
 }
+```
+
+package.json 配置命令 scripts，vitepress-rc 用来注册组件
+```json
+  "scripts": {
+    "dev": "pnpm run register:components && vitepress dev docs",
+    "build": "pnpm run register:components && vitepress build docs",
+    "serve": "vitepress serve docs",
+    "register:components": "vitepress-rc"
+  }
 ```
 
 Markdown 中使用 :::demo，详见：vitepress-theme-demoblock.md

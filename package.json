@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "dev": "pnpm run register:components && vitepress dev docs",
+    "build": "pnpm run register:components && vitepress build docs",
+    "serve": "vitepress serve docs",
+    "register:components": "vitepress-rc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
-    "vitepress": "^1.6.3",
+    "vitepress": "1.0.1",
     "vitepress-theme-demoblock": "^3.1.3"
   }
 }

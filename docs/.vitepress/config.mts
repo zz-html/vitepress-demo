@@ -26,7 +26,8 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'vitepress-theme-demoblock', link: '/vitepress-theme-demoblock' }
+          { text: 'vitepress-theme-demoblock', link: '/vitepress-theme-demoblock' },
+          { text: 'element-plus', link: '/element-plus' },
         ]
       }
     ],

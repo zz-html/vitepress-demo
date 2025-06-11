@@ -93,3 +93,17 @@ package.json 配置命令 scripts，vitepress-rc 用来注册组件
 ```
 
 Markdown 中使用 :::demo，详见：vitepress-theme-demoblock.md
+
+## element-plus使用
+
+安装element-plus
+```bash
+pnpm add element-plus@2.3.14
+```
+
+引入样式
+```bash
+import 'element-plus/dist/index.css'
+```
+
+Markdown 中使用element-plus，详见：element-plus.md

@@ -31,8 +31,8 @@ echo "# Hello VitePress" > docs/index.md
 pnpm dev
 ```
 
-添加配置文件 docs/.vitepress/config.ts
-```ts
+添加配置文件 docs/.vitepress/config.mts
+```mts
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({

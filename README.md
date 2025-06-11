@@ -40,3 +40,39 @@ export default defineConfig({
   description: 'A VitePress site example',
 })
 ```
+
+## vitepress-theme-demoblock使用
+
+安装
+```bash
+pnpm add vitepress-theme-demoblock -D
+```
+
+配置docs/.vitepress/config.mts：
+```mts
+import { defineConfig } from 'vitepress'
+import { demoblockPlugin } from 'vitepress-theme-demoblock'
+
+export default defineConfig({
+  markdown: {
+    config: (md) => {
+      md.use(demoblockPlugin)
+    }
+  },
+  vite: {
+    plugins: [demoblockVitePlugin()]
+  }
+})
+```
+
+引入样式，配置docs/.vitepress/theme/index.ts：
+```mts
+import DefaultTheme from 'vitepress/theme'
+import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
+
+export default {
+  ...DefaultTheme,
+}
+```
+
+Markdown 中使用 :::demo，详见：vitepress-theme-demoblock.md

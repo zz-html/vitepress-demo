@@ -6,7 +6,8 @@
 ```bash
 npm install -g pnpm
 pnpm init
-pnpm add vitepress@latest -D
+# vitepress-theme-demoblock支持版本为1.0.1
+pnpm add vitepress@1.0.1 -D
 ```
 
 创建目录结构

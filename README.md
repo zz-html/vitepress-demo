@@ -42,6 +42,7 @@ export default defineConfig({
 ```
 
 ## vitepress-theme-demoblock使用
+官网：https://github.com/xinlei3166/vitepress-theme-demoblock
 
 安装
 ```bash

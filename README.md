@@ -1,7 +1,7 @@
 # vitepress-demo
 
 ## 安装
-nvm安装Node.js 22.16.0  
+准备Node.js 22.16.0安装
 
 ```bash
 npm install -g pnpm

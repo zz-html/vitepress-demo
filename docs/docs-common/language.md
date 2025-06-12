@@ -4,7 +4,7 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 
 ## 使用变量定义样式
 
-:::demo
+
 ```vue
 <template>
   <div>
@@ -23,4 +23,3 @@ const switchLang = () => {
 }
 </script>
 ```
-:::

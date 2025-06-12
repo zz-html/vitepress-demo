@@ -163,3 +163,5 @@ export default DefaultTheme
   --el-color-primary: #66d9e8; /* 暗黑模式下 primary 按钮主色 */
 }
 ```
+
+## 国际化

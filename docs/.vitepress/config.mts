@@ -29,6 +29,7 @@ export default defineConfig({
           { text: 'vitepress-theme-demoblock', link: '/vitepress-theme-demoblock' },
           { text: 'element-plus', link: '/element-plus' },
           { text: 'var-test', link: '/var-test' },
+          { text: 'language', link: '/docs-common/language' },
         ]
       }
     ],

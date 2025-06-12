@@ -166,7 +166,66 @@ export default DefaultTheme
 
 ## 国际化
 
-vue-i18n
+安装vue-i18n
 ```bash
 pnpm add vue-i18n@^9.5.0
+```
+
+在 docs/.vitepress 目录下新建 i18n.ts：
+```ts
+// docs/.vitepress/i18n.ts
+import { createI18n } from 'vue-i18n'
+
+const messages = {
+  en: {
+    hello: 'Hello World!',
+  },
+  zh: {
+    hello: '你好，世界！',
+  },
+}
+
+export function setupI18n() {
+  return createI18n({
+    legacy: false,
+    locale: 'en', // 默认语言
+    fallbackLocale: 'en',
+    messages,
+  })
+}
+```
+
+在 theme/index.ts 中注册 i18n
+```ts
+import DefaultTheme from 'vitepress/theme'
+import { setupI18n } from '../i18n'
+
+export default {
+  ...DefaultTheme,
+  enhanceApp({ app }) {
+    const i18n = setupI18n()
+    app.use(i18n)
+  },
+}
+```
+
+Vue 组件文件示例
+```vue
+<template>
+  <div>
+    <p>{{ t('hello') }}</p>
+    <el-button @click="switchLang">{{ t('switch') }}</el-button>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
+
+const switchLang = () => {
+  locale.value = locale.value === 'en' ? 'zh' : 'en'
+}
+</script>
+
 ```

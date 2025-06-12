@@ -138,3 +138,17 @@ export default DefaultTheme
 
 <div class="custom-class">自定义样式文本</div>
 ```
+
+暗色样式定义：
+```css
+:root {
+    /* 自定义颜色变量 */
+    --my-color-primary: #409eff;
+    --my-color-danger: #f56c6c;
+}
+
+.dark {
+    --my-color-primary: #0000ff;
+    --my-color-danger: #ff0000;
+}
+```

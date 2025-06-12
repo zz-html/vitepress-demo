@@ -8,6 +8,11 @@
     --my-color-danger: #f56c6c;
 }
 
+.dark {
+    --my-color-primary: #0000ff;
+    --my-color-danger: #ff0000;
+}
+
 /* 自定义全局样式 */
 .custom-class {
     color: var(--my-color-primary);

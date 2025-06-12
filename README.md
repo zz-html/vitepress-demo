@@ -107,3 +107,34 @@ import 'element-plus/dist/index.css'
 ```
 
 Markdown 中使用element-plus，详见：element-plus.md
+
+## 自定义变量
+
+编辑.vitepress/theme/custom.css文件：
+```css
+:root {
+    /* 自定义颜色变量 */
+    --my-color-primary: #409eff;
+    --my-color-danger: #f56c6c;
+}
+
+/* 自定义全局样式 */
+.custom-class {
+    color: var(--my-color-primary);
+}
+```
+
+编辑 .vitepress/theme/index.ts 文件：
+```ts
+import DefaultTheme from 'vitepress/theme'
+import './custom.css' // 直接导入 CSS 文件
+
+export default DefaultTheme
+```
+
+在 Markdown 文件中使用这些样式：
+```markdown
+<span style="color: var(--my-color-primary)">蓝色文本</span>
+
+<div class="custom-class">自定义样式文本</div>
+```

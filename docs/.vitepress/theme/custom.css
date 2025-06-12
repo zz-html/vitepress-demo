@@ -1,0 +1,14 @@
+:root {
+    /* 覆盖默认主题色
+    --vp-c-brand: #646cff;
+    --vp-c-brand-light: #747bff; */
+
+    /* 自定义颜色变量 */
+    --my-color-primary: #409eff;
+    --my-color-danger: #f56c6c;
+}
+
+/* 自定义全局样式 */
+.custom-class {
+    color: var(--my-color-primary);
+}

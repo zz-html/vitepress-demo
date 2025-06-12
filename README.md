@@ -165,3 +165,8 @@ export default DefaultTheme
 ```
 
 ## 国际化
+
+vue-i18n
+```bash
+pnpm add vue-i18n@^9.5.0
+```

@@ -8,6 +8,7 @@
   <div class="card-wrap">
     <div class="card">{{ title }}</div>
     <el-button type="primary" @click="onClick">点击</el-button>
+    <el-button @click="onClick">点击</el-button>
   </div>
 </template>
 

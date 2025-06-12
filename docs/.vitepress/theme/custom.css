@@ -6,11 +6,15 @@
     /* 自定义颜色变量 */
     --my-color-primary: #409eff;
     --my-color-danger: #f56c6c;
+
+    /* --el-color-primary: #0000ff; */
 }
 
 .dark {
     --my-color-primary: #0000ff;
     --my-color-danger: #ff0000;
+
+    /* --el-color-primary: #ffff00; */
 }
 
 /* 自定义全局样式 */

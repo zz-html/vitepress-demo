@@ -152,3 +152,14 @@ export default DefaultTheme
     --my-color-danger: #ff0000;
 }
 ```
+
+修改element样式
+```css
+:root {
+  --el-color-primary: #42b983;  /* 亮色主题下 primary 按钮主色 */
+}
+
+.dark {
+  --el-color-primary: #66d9e8; /* 暗黑模式下 primary 按钮主色 */
+}
+```
